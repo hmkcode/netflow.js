@@ -3,7 +3,13 @@
 
 The library is ment to be used for explanation purposes. 
 
+You can see a demo [here](https://hmkcode.com/netflow/)
+
+![netflow-sample-nn.png](netflow-sample.gif)
+
+
 powered by [p5.js](https://p5js.org/).
+
 
 ## Getting Started:
 
@@ -53,6 +59,5 @@ function build(){
 
 ```
 
-![netflow-sample-nn.png](netflow-sample.gif)
 
 
