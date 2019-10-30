@@ -1,14 +1,15 @@
 # netflow.js
-netflow.js is a javascript library for visualizing neural network structure and training on the browser. 
+**netflow.js** is a javascript library for visualizing neural network structure and training on the browser. 
 
 The library is ment to be used for explanation purposes. 
 
 powered by [p5.js](https://p5js.org/).
 
-Getting Started:
+## Getting Started:
 
-netflow.js is easy to use. you need add some js files to your html file. 
+**netflow.js** is splited into multiple js files. You need to add the js files as shown below to your html file. 
 
+**netflow.js** depends on [`p5.js`](https://p5js.org/) library for drawing on the html canvas. 
 
 ```html
 <html>
@@ -31,6 +32,27 @@ netflow.js is easy to use. you need add some js files to your html file.
   </body>
 </html>
 ```
+## Building a Neural Network
+
+To build a neural network, go to `builder.js` 
+
+Below is a sample 3-layer (input (2), hidden (2) and output (1) ) neural network. 
+The first added layer is always the **input** layer, while the last is the **output**. Any layer added in between is a hidden layer.
+
+```javascript
+function build(){
+    var net = new Net();
+
+    net.addLayer(2); // input 
+    net.addLayer(2); // hidden
+    net.addLayer(1); // ouput
+
+    return net;
+
+}
+
+```
 
 
-`builder.js`
+
+
