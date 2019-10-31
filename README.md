@@ -51,7 +51,36 @@ function build(){
 
     net.addLayer(2); // input 
     net.addLayer(2); // hidden
-    net.addLayer(1); // ouput
+    net.addLayer(1); // output
+
+    return net;
+
+}
+
+```
+## Viewing the Built Neural Network
+
+- Open `index.html` in the browser to view the built network. 
+- To run the forward pass and backpropagation click on the button on the top left corner or press space bar. 
+
+
+## Adjusting the Speed
+
+- To adjust the learning speed go to `dimes.js.
+- Change the value of `DELAY` variable. 
+- The value is in milliseconds.
+
+## Adding Activation Function
+
+- You can add an activation function to a layer while building the network in `builder.js` file.
+
+```javascript
+function build(){
+    var net = new Net();
+
+    net.addLayer(2); // input 
+    net.addLayer(2, ReLu); // hidden with activation function
+    net.addLayer(1); // output
 
     return net;
 
