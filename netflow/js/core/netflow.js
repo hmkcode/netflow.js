@@ -43,9 +43,9 @@ function setup() {
     this.width = 0;
     this.training = null;
 
-    this.addLayer = function (n){
+    this.addLayer = function (n, activation){
         
-        var layer = new Layer(n);
+        var layer = new Layer(n, activation);
         layer.type = "OUTPUT";
         if(this.size == 0)
             layer.type = "INPUT";
